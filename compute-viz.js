@@ -235,7 +235,7 @@
     });
     const out = sc.providers.filter((p, i) => down[i]).map((p) => p.name);
     legend([[C.teal, "Routing weight"], [C.white, "Telemetry", true], [C.orange, "Outage"]],
-      out.length ? `now  ${out.join(" + ")} down · rerouting` : `now  ${J} jobs · fastest provider per job`, t);
+      out.length ? `now  ${out.join(" + ")} down · rerouting` : `now  routing ${J} jobs`, t);
   }
   const bez = (a, b, c, d, u) => { const v = 1 - u; return v * v * v * a + 3 * v * v * u * b + 3 * v * u * u * c + u * u * u * d; };
 
