@@ -1,0 +1,15 @@
+<!doctype html>
+<!-- compute-viz: isometric, data-driven animations of CI compute. Scene "burst": CPU and memory per CI step, with
+     extra cores and memory added when a step is resource-bound. Scene "router": CI jobs routed to the sandbox provider
+     where they finish fastest, rerouted on an outage, with live telemetry. Data: data.json (or ?data=<url>). MIT. -->
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>compute-viz</title>
+
+
+<style>
+:root{--bg:#06080b;--fg:#f4f6f8}
+html,body{margin:0;height:100%;background:var(--bg);overflow:hidden}
+canvas{display:block;width:100vw;height:100vh}
+</style></head><body><canvas id="c"></canvas>
+<script src="compute-viz.js"></script>
+</body></html>
